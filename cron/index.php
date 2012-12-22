@@ -83,8 +83,10 @@ foreach($tweets as $tweet)
 
 
 	//connect to the db
-	$dbserver = "dev.twittermusic.com";
-	$link = mysql_pconnect("$dbserver", "root", "root");
+	$dbserver = "10.181.228.135";
+	$user = "twittermusic";
+	$pw = "Mhd2wFVZZ2JAVVsY";
+	$link = mysql_pconnect($dbserver, $user, $pw);
 	mysql_select_db('twittermusic');
 
 	//insert the track to the track table (if it doesnt already exist)
